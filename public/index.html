@@ -1,37 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Recipes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مكتبة وصفات العالم</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>World Recipes</h1>
-        <nav>
-            <input type="text" placeholder="ابحث عن وصفة">
-            <select>
-                <option>اختر الصنف</option>
-                <option>طعام</option>
-                <option>حلى</option>
-                <option>شراب</option>
-            </select>
-            <select>
-                <option>اختر المطبخ</option>
-            </select>
-            <button>تسجيل الدخول</button>
-        </nav>
-    </header>
-    <main>
-        <div class="recipes-grid">
-            <!-- هنا ستضاف الوصفات -->
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="site-title">مكتبة وصفات العالم</h1>
+      <nav class="navbar">
+        <input type="text" placeholder="ابحث عن وصفة" id="searchBox">
+        <select id="recipeCategory">
+          <option value="">اختر الصنف</option>
+          <option value="طعام">طعام</option>
+          <option value="حلى">حلى</option>
+          <option value="شراب">شراب</option>
+        </select>
+        <select id="cuisine">
+          <option value="">اختر المطبخ</option>
+          <option value="إيطالي">إيطالي</option>
+          <option value="هندي">هندي</option>
+          <option value="صيني">صيني</option>
+          <!-- يمكنك إضافة المزيد -->
+        </select>
+        <button id="loginBtn">تسجيل الدخول</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="recipeGrid">
+      <!-- مثال على بطاقة وصفة، يمكنك تكرارها أو إنشاؤها ديناميكيًا باستخدام JavaScript -->
+      <div class="recipe-card">
+        <img src="images/sample-dish.jpg" alt="اسم الطبخة">
+        <div class="recipe-info">
+          <h2>اسم الطبخة</h2>
+          <p>بواسطة: اسم الطاهي</p>
         </div>
-    </main>
-    <footer>
-        <p>© 2025 World Recipes</p>
-    </footer>
-    <script src="app.js"></script>
+      </div>
+      <!-- أضف المزيد من البطاقات هنا -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 مكتبة وصفات العالم</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
+
 
